@@ -49,7 +49,7 @@ class ContentTeam:
             verbose=True
         )
 
-        return crew.kickoff()
+        return crew.kickoff().raw
 
 
 if __name__ == "__main__":
