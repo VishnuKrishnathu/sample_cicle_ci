@@ -13,7 +13,7 @@ jobs:
           name: Install Dependencies
           command: |
             python -m venv venv
-            export PYTHONPATH="${pwd}"
+            export PYTHONPATH=":$(pwd)"
             . venv/bin/activate
             pip install -r requirements.txt
             echo $PYTHONPATH
